@@ -1,0 +1,166 @@
+Basic Styles
+body {
+	font-family: Arial, sans-serif;
+}
+
+
+img{
+    width: 60%;
+    height: 50%;
+}
+
+/* Navbar styling */
+nav {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    font-size: 1.2em;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  nav li {
+    margin: 0 0.5em;
+  }
+  
+  nav li a {
+    display: block;
+    color: rgb(66, 52, 34);
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5em;
+  }
+  
+  nav li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  /* Dropdown menu */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Active link */
+  .active {
+    background-color: #4CAF50;
+  }
+  
+  /* Responsive design */
+  @media only screen and (max-width: 600px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+      font-size: 1em;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      margin-top: 1em;
+    }
+  
+    nav li {
+      margin: 0.5em;
+    }
+  
+    nav li a {
+      padding: 0.2em;
+    }
+  }
+  
+
+
+  /* edit all */
+h1, h2 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+li {
+	margin-bottom: 5px;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+/* Categories */
+ul:nth-of-type(1) {
+	border-bottom: 1px solid #ccc;
+}
+
+/* Filters */
+ul:nth-of-type(2) {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+label {
+	margin-right: 10px;
+}
+
+select {
+	margin-right: 20px;
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	background-color: #f8f8f8;
+}
+
+/* Featured Products */
+ul:nth-of-type(3) {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+/* Product Listing */
+ul:nth-of-type(4) {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 20px;
+}
+
+li a {
+	display: block;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: #f8f8f8;
+	transition: all 0.3s ease;
+}
+
+li a:hover {
+	background-color: #ddd;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}

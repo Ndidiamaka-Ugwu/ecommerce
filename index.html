@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- 1. make a header and a footer
+    2. create a navbar for all pages
+    3. sepaarate clothing into subcaategories aand create new pagess for each
+    4. complete the pictures and add more categories
+    5. css. use flex
+    6. don't forget responsive settings for diff mobile secreens. use mediabreak(sp?)
+    -->
+   
+
+    <container id="main-container">
+        <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+      
+              <li class="dropdown">
+                <a href="#" class="dropbtn">Clothing</a>
+                <div class="dropdown-content">
+                  <a href="clothing.html">Women</a>
+                  <a href="men-clothing.html">Men</a>
+                  <a href="others.html">Others</a>
+                </div>
+              </li>
+      
+              <li class="dropdown">
+                <a href="#" class="dropbtn">Home Goods</a>
+                <div class="dropdown-content">
+                  <a href="furniture.html">Furniture</a>
+                  <a href="homeDecor.html">Home Decor</a>
+                  <a href="beddingAndBath.html">Bedding and Bath</a>
+                  <a href="kitchenAndDining.html">Kitchen and Dining</a>
+                  <a href="homeAppliances.html">Home Appliances</a>
+                  <a href="homeImprovement.html">Home Improvement</a>
+                  <a href="storageAndOrganization.html">Storage and Organization</a>
+                  <a href="stationery.html">stationery</a>
+                  <a href="cleaningSupplies.html">Cleaning Supplies</a>
+                </div>
+              </li>
+      
+              <li><a href="beautyProducts.html">Beauty Products</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropbtn">Gadgets</a>
+                <div class="dropdown-content">
+                
+                  <a href="wearableTechnology.html">Wearable Technology</a>
+                  <a href="audioAndVideoDevices.html">Audio and Video Devices</a>
+                
+                  <a href="gaming.html">Gaming Devices</a>
+                 
+                  <a href="virtualReality.html">Virtual Reality</a>
+                  <a href="gadgets.html">Other Electronic Devices</a>
+                </div>
+              </li>
+              <li><a href="cart.html">Cart</a></li>
+              <li><a href="login.html">Login</a></li>
+            </ul>
+          </nav>
+      <container id="top">
+        <h1>Product Listing</h1>
+
+        <h2>
+          Categories
+          <ul>
+            <li><a href="clothing.html">Clothing</a></li>
+            <li>
+              <a
+                href="gadgets.html
+            "
+                >Gadgets</a
+              >
+            </li>
+            <li><a href="homeDecor.html"> Home Decor</a></li>
+            <li>
+              <a
+                href="beautyProducts.html
+            "
+                >Beauty Products</a
+              >
+            </li>
+          </ul>
+        </h2>
+      </container>
+      <h2>Filters</h2>
+      <label for="price">Price:</label>
+      <select id="price">
+        <option value="all">All</option>
+        <option value="under25">$0 - $25</option>
+        <option value="25to50">$25 - $50</option>
+        <option value="50to100">$50 - $100</option>
+        <option value="over100">Over $100</option>
+      </select>
+
+      <label for="size">Size:</label>
+      <select id="size">
+        <option value="all">All</option>
+        <option value="xs">XS</option>
+        <option value="s">S</option>
+        <option value="m">M</option>
+        <option value="l">L</option>
+        <option value="xl">XL</option>
+      </select>
+
+      <label for="color">Color:</label>
+      <select id="color">
+        <option value="all">All</option>
+        <option value="black">Black</option>
+        <option value="white">White</option>
+        <option value="gray">Gray</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="red">Red</option>
+      </select>
+
+      <label for="brand">Brand:</label>
+      <select id="brand">
+        <option value="all">All</option>
+        <option value="nike">Nike</option>
+        <option value="adidas">Adidas</option>
+        <option value="apple">Apple</option>
+        <option value="samsung">Samsung</option>
+        <option value="sony">Sony</option>
+        <option value="maybelline">Maybelline</option>
+      </select>
+
+      <h2>Featured Products</h2>
+      <ul>
+        <li>
+          <img
+            src="images/beauty-products/pexels-adrienne-andersen-2661256.jpg"
+            alt="beauty products"
+          /><a href="beautyProducts.html"
+            >Our Exclusive Benty concealer for dark-skinned pearl-skinned
+            girls</a
+          >
+        </li>
+
+        <li>
+          <img
+            src="images/gadgets/pexels-debraj-roy-13780425.jpg"
+            alt="Image 3"
+          /><a href="gadgets.html">Latest and Hottest Phones</a>
+        </li>
+        <li>
+          <img
+            src="images/clothing/women-clothing/pexels-polina-kovaleva-5885840.jpg"
+            alt="cozy house wear"
+          /><a href="clothing.html">Speak Fashion- Speak bold life</a>
+        </li>
+        <li>
+          <img
+            src="images/clothing/clothing2/pexels-amina-filkins-5560028.jpg"
+            alt="boy in a gray sweater and brown trouser"
+          /><a href="clothing.html"
+            >Always be right with these selection from beSpokey</a
+          >
+        </li>
+        <li>
+          <img
+            src="images/clothing/clothing2/pexels-tubarones-photography-3026283.jpg"
+            alt="black guy wearing black shirt and gray trousers"
+          /><a href="clothing.html">lead the Pack in Style</a>
+        </li>
+      </ul>
+
+      <h2>Product Listing</h2>
+      <ul>
+        <li><a href="#">Product B</a></li>
+        <li><a href="#">Product C</a></li>
+        <li><a href="#">Product D</a></li>
+        <li><a href="#">Product E</a></li>
+        <li><a href="#">Product F</a></li>
+        <li><a href="#">Product G</a></li>
+        <li><a href="#">Product H</a></li>
+      </ul>
+    </container>
+  </body>
+</html>
